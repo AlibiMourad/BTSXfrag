@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.GPSpage"
+             Title="     G.P.S Location"
+             >
+ <StackLayout Orientation="Vertical">
+   <Button Text="Get GPS Position          "
+           HorizontalOptions="Center"
+           BackgroundColor="#0BACFF"
+           TextColor="White"
+           Clicked="Button_OnClicked"
+           />
+  
+   <Label x:Name="LatitudeLabel" HorizontalOptions="Center"
+          FontSize="50"/>
+   <Label x:Name="LogitudeLabel"  HorizontalOptions="Center"
+          FontSize="50"/>
+   <Button Text="OK               >>"
+           HorizontalOptions="Center"
+           BackgroundColor="#0BACFF"
+           TextColor="White"
+          Clicked="clicOK"
+           x:Name="Button2"/>
+   <Button Text=" Cancel          >>"
+           BackgroundColor="#0BACFF"
+            HorizontalOptions="Center"
+          TextColor="Gray"
+         Clicked="Button_Cancel"/>
+ </StackLayout>
+</ContentPage>

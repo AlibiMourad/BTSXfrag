@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"       
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           x:Class="BTSxfrag.PageAssambl"       
+            Title="Student Data">
+  <ContentPage Title="Info">
+        <ContentPage.Icon>
+          <OnPlatform x:TypeArguments="FileImageSource"    
+                      iOS="ic_action_about.png" />
+        </ContentPage.Icon>
+    
+    <StackLayout>
+      <Label Text="site 4G+ "         
+             FontSize="Large"         
+             HorizontalOptions="Center" />
+      <StackLayout Spacing="12"               
+                   VerticalOptions="CenterAndExpand"    
+                   HorizontalOptions="Center">
+
+        <Label Text="Univers Freebox vous en parle régulièrement. Les premières traces de 4G+ sur le réseau mobile de Free ont été repérées, aussi bien à Montpellier qu’à Vitry-sur-Seine (en région parisienne). Aujourd’hui, nous vous proposons de découvrir les premières photos d’un site 4G+ (1800MHz), accompagnées des explications de @LotusV7, un abonné Free, ingénieur d’étude électronique numérique/analogique et Radiofréquence."></Label>
+        
+      </StackLayout>
+    
+    </StackLayout>
+ 
+  </ContentPage>
+  
+  <ContentPage Title="Photo">
+    <ContentPage.Icon>
+      <OnPlatform x:TypeArguments="FileImageSource"                         iOS="ic_action_person.png" />
+    </ContentPage.Icon>
+    <StackLayout VerticalOptions="Center">
+      <Image Source="1.jpg"                    VerticalOptions="FillAndExpand" />
+    </StackLayout>
+  </ContentPage>
+  
+  <ContentPage Title="Notes">
+    <ContentPage.Icon>
+      <OnPlatform x:TypeArguments="FileImageSource"                         iOS="ic_action_edit.png" />
+    </ContentPage.Icon>
+    <StackLayout VerticalOptions="Center">
+      <Label Text="-  un module RF avec 3 chaines radio TX/RX + 3 RX_D - 900 Mhz (3G)
+
+-  un module RF avec 3 chaines radio TX/RX + 3 RX_D - 2100 Mhz (3G)
+
+-  un module RF avec 6 chaines radio TX/RX (2xMIMO) - 1800 Mhz (4G)
+
+-  un module RF avec 6 chaines radio TX/RX (2xMIMO) - 2600 Mhz (4G)
+
+1 Twin Diplexer par antenne permet de mixer deux bandes différentes. La capacité totale en 1800 MHz (5Mhz ; 15Mhz en Juin 2016) sera inférieure à celle de la bande 2600MHz (20MHz). Aussi, la couverture d’une cellule en 1800 MHz est significativement supérieure à celle de la 2600MHz."                          HorizontalOptions="Center" />
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="Photo">
+    <ContentPage.Icon>
+      <OnPlatform x:TypeArguments="FileImageSource"                         iOS="ic_action_person.png" />
+    </ContentPage.Icon>
+    <StackLayout VerticalOptions="Center">
+      <Image Source="2.jpg"                    VerticalOptions="FillAndExpand" />
+    </StackLayout>
+  </ContentPage>
+</CarouselPage>

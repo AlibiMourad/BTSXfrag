@@ -1,0 +1,2 @@
+D:\BTSxfrag\CustomRenderer\BTSxfrag.csproj;neutral
+D:\BTSxfrag\UWP\BTSxfrag.UWP.csproj;x86

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.IfconfugPage">
+
+  <StackLayout BackgroundColor="White" Orientation="Vertical" >
+
+ 
+      <Label Text="address IP" FontSize="30"/>
+    <Entry x:Name="EntryIp" />
+      <Label  FontSize="30" Text="Masque en notion decimal ou CIDR"/>
+    <Entry FontSize="30" x:Name="EntryMasque"/>
+
+      <Label FontSize="30" Text="capteur de tram de :"/>
+    <Entry FontSize="30" x:Name="EntryCapteur"/>
+      <Label Text="vers : " FontSize="30"/>
+    <Entry FontSize="30" x:Name="EntryVers"/>
+ 
+    <StackLayout Orientation="Horizontal"
+                 HorizontalOptions="Center"
+                 Padding="20">
+      <Button Text="save"
+            
+              Clicked="ClicSave"
+              BorderColor="Red"
+              BackgroundColor="Blue"
+              TextColor="White"></Button>
+    </StackLayout>
+   <Label Text="Entry Vide"
+          x:Name="LabelError"
+          IsVisible="False"
+          TextColor="White"
+          BackgroundColor="Red"
+          HorizontalOptions="Center"/> 
+   
+  </StackLayout>
+</ContentPage>

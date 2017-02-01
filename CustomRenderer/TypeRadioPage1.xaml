@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.TypeRadioPage1"
+                          Title="Choisie Type Radio FH"
+             >
+<StackLayout Orientation="Vertical"
+            Padding="30,10,30,0"
+            VerticalOptions="Center">
+<Image Source="BTS1.png"
+          BackgroundColor="White"
+    HorizontalOptions="Center">
+  <Image.GestureRecognizers>
+    <TapGestureRecognizer
+      Tapped="ClicGPRS"/>
+  </Image.GestureRecognizers>
+</Image>
+
+  <Image Source="BTS2.jpg"
+         BackgroundColor="White"
+    HorizontalOptions="Center">
+    <Image.GestureRecognizers>
+      <TapGestureRecognizer
+        Tapped="ClicEqupement"/>
+    </Image.GestureRecognizers>
+  </Image>
+<StackLayout Orientation="Horizontal"
+             HorizontalOptions="Center">
+  <Image Source="BTS3.png"
+            BackgroundColor="White"
+    HorizontalOptions="Center">
+    <Image.GestureRecognizers>
+      <TapGestureRecognizer
+        Tapped="ClicRAdio"/>
+    </Image.GestureRecognizers>
+  </Image>
+  <Image Source="BTS4.png"
+            BackgroundColor="White"
+    HorizontalOptions="Center">
+    <Image.GestureRecognizers>
+      <TapGestureRecognizer
+        Tapped="ClicRAdio"/>
+    </Image.GestureRecognizers>
+  </Image>
+</StackLayout>
+</StackLayout>
+</ContentPage>

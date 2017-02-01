@@ -1,0 +1,50 @@
+﻿@model BTSxfrag.Mode.Orange
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Orange</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.x)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.x)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.y)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.y)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

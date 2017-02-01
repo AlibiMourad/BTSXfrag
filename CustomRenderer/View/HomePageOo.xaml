@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.View.HomePageOo"
+             xmlns:local="clr-namespace:BTSxfrag.ViewModel;assembly=BTSxfrag"
+                          Title="List Position Of BTS Ooredo">
+  <ContentPage.BindingContext>
+    <local:MainViewModelOo/>
+  </ContentPage.BindingContext>
+
+  <StackLayout Orientation="Vertical">
+    <Button Text="GoMAP>>"
+          BackgroundColor="Lime"
+          HorizontalOptions="End"
+        Clicked="GoMap"/>
+    <Grid Padding="20,0,20,0">
+    <ListView x:Name="MyListOo"
+              ItemsSource="{Binding ListOoredos}"
+              HasUnevenRows="True"
+              >
+      
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal"
+                         BackgroundColor="Red">
+              <Label Text="Id=" TextColor="White"/>
+              <Label Text="{Binding Id}" TextColor="White"/>
+              <Label Text=",X=" TextColor="White" x:Name="LabelX"/>
+              <Label Text="{Binding x}" TextColor="White"/>
+              <Label Text=",Y=" TextColor="White"/>
+              <Label Text="{Binding y}" TextColor="White"/>
+              <Label Text="Title= " TextColor="White"/>
+              <Label Text="{Binding title}" TextColor="White" x:Name="LabelTitle"/>
+              <Label Text="Address= " TextColor="White"/>
+              <Label Text="{Binding address}" TextColor="White" x:Name="LabelAddress"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      </ListView>
+    </Grid>
+  </StackLayout>
+</ContentPage>

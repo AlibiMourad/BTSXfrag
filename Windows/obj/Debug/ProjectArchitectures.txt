@@ -1,0 +1,2 @@
+C:\Users\xfrag\Documents\Visual Studio 2015\Projects\GoinXfrag1.2\GoinXfrag1.2\GoinXfrag1._2.Windows\GoinXfrag1.Windows.csproj;neutral
+C:\Users\xfrag\Documents\Visual Studio 2015\Projects\GoinXfrag1.2\GoinXfrag1.2\GoinXfrag1._2\GoinXfrag1.csproj;neutral

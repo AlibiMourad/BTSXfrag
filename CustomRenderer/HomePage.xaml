@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.HomePage"
+             Title="Choisi Votre Client-Operateur">
+ <StackLayout Orientation="Vertical" 
+              
+              HorizontalOptions="Center"
+              VerticalOptions="Start"
+              Padding="0,20,0,0">
+    <Image Source="xamarinT.png"
+           HorizontalOptions="Center"
+            BackgroundColor="Blue">
+       <Image.GestureRecognizers>
+         <TapGestureRecognizer Tapped="ButtonTt"/>
+       </Image.GestureRecognizers>
+     </Image>
+   <Image Source="xamarinO.png"
+           HorizontalOptions="Center"
+           BackgroundColor="Red">
+     <Image.GestureRecognizers>
+       <TapGestureRecognizer Tapped="ButtonOo"/>
+     </Image.GestureRecognizers>
+    </Image>
+   <Image Source="xamarinR.png"
+           HorizontalOptions="Center"
+           BackgroundColor="#FF4A00">
+     <Image.GestureRecognizers>
+       <TapGestureRecognizer Tapped="ButtonOr"/>
+     </Image.GestureRecognizers>
+   </Image>
+     <Grid Padding="10">
+       <Button x:Name="Button1" Text="Tunisie Telecom" BackgroundColor="Blue"  Clicked="ButtonTt"/>
+     </Grid>
+     <Grid Padding="10">
+       <Button x:Name="Button2" Text="Ooredo" BackgroundColor="Red" Clicked="ButtonOo"/>
+     </Grid>
+     <Grid Padding="10">
+       <Button x:Name="Button3" Text="Orange" BackgroundColor="#FF4A00" Clicked="ButtonOr"/>
+     </Grid>
+
+   </StackLayout>
+
+   
+</ContentPage>

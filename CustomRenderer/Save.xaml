@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTSxfrag.Save">
+ <StackLayout Orientation="Vertical">
+   <Label x:Name="Label1"/>
+   <Label x:Name="Label2"/>
+   <Label x:Name="Label3"/>
+   <Label x:Name="Label4"/>
+   <Label x:Name="Label5"/>
+   <Label x:Name="Label6"/>
+   <Button Text="OK >>"
+           TextColor="Maroon"
+           BackgroundColor="Lime"></Button>
+ </StackLayout>
+</ContentPage>
